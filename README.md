@@ -5,6 +5,7 @@ This is a Minimal docker image/compose for nginx webserver for your static web p
 Clone the repository. Copy your static website into www folder
 ### Docker
 ```bash
+cd image
 docker build -t smallserver .
 docker run -v /path/to/your/static/www/:/www-data/ -p 8080:80 smallserver
 ```
